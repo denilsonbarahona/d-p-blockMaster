@@ -1,0 +1,46 @@
+.ranked { 
+    color: white;        
+    font: var(--body2-bold);
+    inline-size: 3.5625rem;    
+    padding: 0;
+    border-end-end-radius: 2rem;
+    border-start-end-radius: 2rem;
+    background: rgba(15, 14, 23, .64);
+    position: absolute;
+    inset-block-start: .5rem; 
+}
+
+.ranked.isMostValued{
+    box-shadow: inset 0 0 0 2px rgba(254, 217, 65, .64);
+}
+
+.ranked.isLeastValued{
+    box-shadow: inset 0 0 0 2px rgba(14, 63, 169, .64);
+}
+
+
+.ranked-content {
+    padding: 0; 
+    block-size: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding-block: 0.4375rem;
+}
+
+.ranked-content >*{
+    margin: 0; 
+}
+
+@media screen and (min-width: 1024px) {
+    .ranked{
+        inline-size: 7.125rem;  
+        font: var(--headline3);
+    }
+
+    .ranked-content {
+        padding-block: 1rem;
+    }
+}

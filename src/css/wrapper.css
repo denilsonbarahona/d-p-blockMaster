@@ -1,0 +1,11 @@
+.wrapper {  
+    margin: auto; 
+    padding-inline: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) { 
+    .wrapper {
+        max-inline-size: 85.25rem; 
+    }
+ 
+}

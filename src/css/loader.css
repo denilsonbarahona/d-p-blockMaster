@@ -1,0 +1,24 @@
+.loader {
+    inline-size: 2.5rem;
+    aspect-ratio: 1/1;
+    border: .20rem solid var(--background);
+    border-block-start: .20rem solid var(--primary);
+    border-inline-start: .20rem solid var(--primary);
+    border-block-end: .20rem solid var(--primary);
+    border-radius: 50%;
+    animation: 1s loader infinite ease-in-out;
+    display: none;
+}
+
+@keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .loader{
+        inline-size: 5rem;
+    }
+}

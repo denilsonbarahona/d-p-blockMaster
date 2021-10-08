@@ -1,0 +1,78 @@
+
+
+.poster-slider {
+    white-space: nowrap;
+    display: block;
+    font-size: 0;
+    scroll-behavior: smooth;
+    overflow: scroll; 
+}
+
+.poster-page {
+    display: inline-block; 
+    margin-inline: .25rem; 
+    border-radius: .5rem;
+    overflow: hidden;
+    inline-size: 100%;
+    position: relative;
+}
+
+.poster-img {
+    inline-size: 100%;
+    block-size: 5.25rem; 
+}
+
+.poster-img img {   
+    aspect-ratio: 16/9;
+    vertical-align: middle;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+.poster-bullet-list {
+    text-align: center;
+    padding: .5rem;
+}
+
+.page-bullet {
+    display: inline-block;
+    inline-size: .75rem;
+    aspect-ratio: 1/1;
+    background: var(--gray);
+    border-radius: 50%;
+    margin-inline-end: .5rem;
+}
+
+.page-bullet:hover{
+    background: var(--white);
+}
+
+.page-actions {
+    display: none;
+}
+
+.poster-slider::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .poster-img{
+        border-radius: .5rem; 
+        inline-size: 100%;
+        block-size: 19.375rem;
+    }
+
+    .poster-page {        
+        margin-inline: .75rem;         
+    }
+
+    .page-actions {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        position: absolute; 
+        inset-block-end: 2rem;
+        inset-inline-start: 1.5rem;
+    }
+}

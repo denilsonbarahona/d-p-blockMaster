@@ -1,0 +1,27 @@
+@import "./ranked.css";
+
+.movie {
+    position: relative; 
+    display: inline-block;
+    border-radius: .25rem;
+    overflow: hidden;
+    inline-size: 5rem;
+    block-size: 7.5rem; 
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.movie img {
+    inline-size: 100%;
+    block-size: 100%;
+    vertical-align: middle;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .movie{
+        border-radius: .5rem; 
+        inline-size: 13.75rem;
+        block-size: 20.625rem;
+    }
+}

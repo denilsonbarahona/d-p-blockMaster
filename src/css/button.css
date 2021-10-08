@@ -1,0 +1,77 @@
+.button {
+    color: white;
+    background: none;
+    border: 1px solid transparent;
+    padding: 0;
+    text-decoration: none;
+    display: inline-block;
+    font: var(--button);
+    cursor: pointer;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.button:active{
+    transform: scale(.95);
+}
+
+.button.is-icon{
+    background: var(--primary);
+    color: var(--black);
+    font-size: 1.5rem; 
+    padding-inline-start: .75rem;
+    padding-inline-end: .75rem;
+    padding-block-start: 0.3125rem;
+    padding-block-end: 0.3125rem;
+}
+
+.button.is-icon i {  
+    vertical-align: middle;
+}
+
+ 
+.button.is-primary{
+    text-transform: uppercase;
+    background: var(--primary);
+    color: var(--black);
+    padding-block: 0.625rem;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center; 
+    gap: .5rem;
+    border-radius: .25rem;
+    inline-size: 100%;
+}
+
+.button.is-noPrimary{
+    text-transform: uppercase;
+    background: var(--background);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding-block: 0.625rem;
+    display: flex;
+    flex: 1;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center; 
+    gap: .5rem;
+    border-radius: .25rem;
+    inline-size: 100%;
+}
+
+.button.is-primary i,
+.button.is-noPrimary i {   
+    font-size: 1.5rem; 
+    margin-block-start: 1px;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .button.is-noPrimary,
+    .button.is-primary{ 
+      max-inline-size: 14rem;
+      padding-inline: 1.5rem;
+    }
+}

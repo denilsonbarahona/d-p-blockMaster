@@ -1,0 +1,19 @@
+ 
+.main .loader {
+    margin: auto;
+    margin-block-start: 8rem;
+    margin-block-end: 3.75rem;
+}
+
+.main-title {
+    font: var(--body2-bold);
+    color: var(--white);
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main-title {
+        font: var(--headline1);
+    }
+    
+}
